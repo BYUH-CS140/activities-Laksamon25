@@ -12,19 +12,19 @@
   <header>
     <h1>How to Fold a Paper Airplane</h1>
     <nav>
-      <a href="#materials">Materials</a> | <a href="steps">Folding Steps</a> | <a href="#Tip">Tips</a>
+      <a href="#materials">Materials</a> | <a href="#steps"><!--bug1- Missing # to reference to an internal ID.-->Folding Steps</a> | <a href="#tips">Tips</a> <!--bug2- id = "tips" is lower case, but #Tip won't match in line 41-->
     </nav>
   </header>
   <section id="intro">
-    <h2>Introduction
+    <h2>Introduction</h2> <!--bug3- have to close before staring a new paragraph -->
       <p>Folding a paper airplane is easy and fun! Follow these steps to create your own airplane.</p>
-      <img src="airplane.png" alt="Paper Airplane">
+      <img src="airplane.png" alt="A white paper airplane flying through the air"> <!--bug4- use more descriptive alt text needed for accessibility not just "Paper Airplane"-->
   </section>
-  <section id=materials>
+  <section id="materials"> <!--big9- missing ".." for materials. I got this bug by asking ChatGPT "what bug I have left" after I fixed 8 bugs already-->
     <h2>Materials Needed</h2>
     <ul>
       <li>1 sheet of paper</li>
-      <l1>A flat surface to fold the paper</l1>
+      <li>A flat surface to fold the paper</li> <!-- bug5- l1 should be li-->
     </ul>
   </section>
   <section id="steps">
@@ -36,21 +36,45 @@
       <li>Fold the top edges again to the center.</li>
       <li>Fold the plane in half lengthwise.</li>
       <li>Fold the wings down, matching the top edges of the wings with the bottom edge of the body.</li>
-      </ul>
+    </ol> <!--bug6- should end with </ol> not </ul> and I use <ol> tag for bullet points-->
   </section>
   <section id="tips">
     <h2>Extra Tips</h2>
     <ul>
       <li>Make sure your folds are as sharp as possible.</li>
       <li>This airplane has stiff wings and can tolerate fast throwing speeds.</li>
+      <li>Throw it as hard as you can for maximum distance and speed.</li> <!--bug7- wrap it inside the existing <ul> or remove if not needed-->
     </ul>
-    <li>Throw it as hard as you can for maximum distance and speed.</li>
   </section>
   <hr>
   <footer>
-    <a herf="www.foldnfly.com">Learn more about paper airplanes</a>
+    <a href="https://www.foldnfly.com">Learn more about paper airplanes</a> <!--bug8- should be href not herf. bug10- need to have https:// for full link for www.foldnfly.com-->
     <p>&copy; 2024</p>
   </footer>
 </body>
 
 </html>
+
+
+<!--Report-->
+<!--Bug#1- Missing # to reference to an internal ID. I got this through asked ChatGPT- prompt is what are the bugs? after I paste the code.
+           I learned that we need to have # to refer the id.
+    Bug#2- id = "tips" is lower case, but #Tip won't match in line 41. I asked ChatGPT- promt is the same as bug#1.
+           I learned that we have to make sure # is match with the id. lower case or upper case.
+    Bug#3- have to close before staring a new paragraph. This bug I used "Nu Html Checker" website.
+           I learned that we have to always close the tag
+    Bug#4- use more descriptive alt text needed for accessibility not just "Paper Airplane. I got this from ChatGPT- prompt "What are the bug left?".
+           I learned that we need to describe more for accessibility clearn and just like what we want to tell some one who cannot see.
+    Bug#5- bug4- l1 should be li. I used "Nu Html Checker" website to check"
+          I learned that we have to use li not nummber.
+    Bug#6- should end with </ol> not </ul> and I use <ol> tag for bullet points. I used "Nu Html Checker" website.
+          I learned that we have to use the same list form.
+    Bug#7- wrap it inside the existing <ul> or remove if not needed. I used "Nu Html Checker" website.
+          I learned that we have to put list inside.
+    Bug#8- should be href not herf. bug10- need to have https:// for full link for www.foldnfly.com. I used used "Nu Html Checker" website and ChatGPT- prompt "what is the bug"
+           I learned that we have to use correct href.
+    Bug#9- missing ".." for materials. I got this bug by asking ChatGPT "what bug I have left" after I fixed 8 bugs already.
+          I learned that we need to put "..".
+    Bug#10- need to have https:// for full link for www.foldnfly.com- I got this bug from ChatGPT- prompt "What is the lats bug?". 
+          I learned that we have to put the full link.
+  -->
