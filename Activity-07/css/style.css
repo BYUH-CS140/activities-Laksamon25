@@ -1,0 +1,41 @@
+/* Tag selector to style all paragraph text */
+p {
+    color: #ffe3c2;
+  }
+
+  /* Style for the body background */
+  body {
+    background-color: #ffe3c2;
+  }
+
+  /* ID selector for main header */
+  #mainHeader {
+    color: #801818;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Class for headers background */
+  .header {
+    background-color: burlywood;
+    color: #801818;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Image border styling */
+  .bordered-img {
+    border: 10px solid black;
+    align-items: center;
+  }
+
+  /* Footer style */
+  footer {
+    background-color: #801818; color: aliceblue; padding: 10px 0; text-align: center;
+  }
+
+
+  /* Bonus: This class adds a yellow highlight to content */
+  .highlight {
+    background-color: yellow;
+  }
