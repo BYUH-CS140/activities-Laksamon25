@@ -1,12 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Tag selector to style all paragraph text */
 p {
-    color: #ffe3c2;
+    color: rgb(255, 255, 255);
   }
 
   /* Style for the body background */
   body {
-    background-image:url(../image/w.jpg);
-    background-color: #ffe3c2;
+    background-image: url(../image/w.jpg);
+    background-color: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
     text-align: center;
   }
   .content-box {
@@ -20,18 +26,30 @@ p {
     color: #000;
     text-align: center;
   }
+  
+  img {
+    border: 5px solid black;
+    max-width: 100%;
+    height: auto;
+  }
 
-  /* ID selector for main header */
-  #mainHeader {
-    color: #801818;
-    font-weight: bold;
+  #page-header {
+    background-image: url("../image/gym.jpg");
+    background-size: cover;
+    color: #ffffff;
+    padding: 7rem;
     text-align: center;
   }
 
+  .title {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+  }
+
   /* Class for headers background */
-  .header {
-    background-color: burlywood;
-    color: #801818;
+  header {
+    background-color: #801818;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
   }
@@ -42,13 +60,64 @@ p {
     align-items: center;
   }
 
-  /* Footer style */
-  footer {
-    background-color: #801818; color: aliceblue; padding: 10px 0; text-align: center;
+  section {
+    margin-bottom: 2rem;
   }
 
+  ol, ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+  }
 
   /* Bonus: This class adds a yellow highlight to content */
   .highlight {
     background-color: yellow;
+  }
+
+  /*Navigation Bar list*/
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .nav-list > li {
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  .nav-list a:hover {
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+  .resources {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 60%;
+    margin: 2rem auto; /* Optional: center and space it out */
+    text-align: left;
+  }
+
+  .resources li {
+    margin-bottom: 0.5rem;
+  }
+/* Footer style */
+  footer {
+    background-color: #801818;
+    color: aliceblue;
+    padding: 5rem;
+    text-align: center;
   }
