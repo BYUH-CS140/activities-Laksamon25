@@ -1,5 +1,5 @@
 body {
-  background-color: forestgreen; /*Bug 1 - put the dash between backgorund and color*/
+  background-color: forestgreen; /*Bug 1 - put the dash between background and color*/
   margin: 0;
   font-family: Gil Sans, sans-serif; /*Bug 8 - missing the font "sans-serit"*/
 }
