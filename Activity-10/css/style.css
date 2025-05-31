@@ -64,7 +64,7 @@ main {
 }
 
 section {
-  margin-top: 30px; /*Bug 7 - is was typed wrong. It has to have - between the word*/
+  margin-top: 30px; /*Bug 7 - It was typed wrong. It has to have "-" between the word "margin" and "top"*/
 }
 
 h2 {
