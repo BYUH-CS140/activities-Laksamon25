@@ -28,9 +28,11 @@ p {
   }
   
   img {
+    float: left;
     border: 5px solid black;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+    margin-right: 20px;
   }
 
   #page-header {
@@ -52,12 +54,6 @@ p {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
-  }
-
-  /* Image border styling */
-  .bordered-img {
-    border: 10px solid black;
-    align-items: center;
   }
 
   section {
@@ -158,6 +154,15 @@ p {
 
   .resources li {
     margin-bottom: 0.5rem;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .item {
+
   }
   
 /* Footer style */
