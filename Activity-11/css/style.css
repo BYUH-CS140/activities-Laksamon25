@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Tag selector to style all paragraph text */
-p {
-    color: rgb(255, 255, 255);
-  }
 
   /* Style for the body background */
   body {
@@ -18,13 +14,13 @@ p {
   .content-box {
     background-color: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
     padding: 30px;
-    margin: 40px auto;
+    margin: 60px auto;
     width: 100%;
     max-width: 900px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 76, 219, 0.3); /* Optional: soft shadow for contrast */
     color: #000;
-    text-align: center;
+    text-align: left;
   }
   
   img {
@@ -32,7 +28,7 @@ p {
     border: 5px solid black;
     max-width: 50%;
     height: auto;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   #page-header {
@@ -57,7 +53,7 @@ p {
   }
 
   section {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   ol, ul {
@@ -164,7 +160,11 @@ p {
   .item {
 
   }
-  
+  .float-wrap::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
 /* Footer style */
   footer {
     background-color: #000000;
