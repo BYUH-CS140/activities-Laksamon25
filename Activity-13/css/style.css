@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  /* Style for the body background */
+  body {
+    background-image: url(../image/w.jpg);
+    background-color: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+  }
+  .content-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+    padding: 30px;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 76, 219, 0.3); /* Optional: soft shadow for contrast */
+    color: #000;
+    text-align: left;
+  }
+  
+  img {
+    float: left;
+    border: 5px solid black;
+    max-width: 50%;
+    height: auto;
+    margin-right: 40px;
+  }
+
+  #page-header {
+    background-image: url("../image/gym.jpg");
+    background-size: cover;
+    color: #ffffff;
+    padding: 7rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* Class for headers background */
+  header {
+    background-color: #801818;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  ol, ul {
+    margin: 1rem 0;
+    padding-left: 0;
+    line-height: 1.6;
+  }
+
+  /* Bonus: This class adds a yellow highlight to content */
+  .highlight {
+    background-color: yellow;
+  }
+
+  /*Navigation Bar list*/
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .nav-list > li {
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+
+  .nav-list a:hover {
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+  }
+
+  .menu li {
+    position: relative;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+  }
+
+  .menu li a:hover {
+    background-color: #555;
+  }
+
+/* Dropdown Menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0;
+  }
+
+  .dropdown-menu li a {
+  padding: 10px 20px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .resources {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 60%;
+    margin: 2rem auto; /* Optional: center and space it out */
+    text-align: left;
+  }
+
+  .resources li {
+    margin-bottom: 0.5rem;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .item {
+
+  }
+  .float-wrap::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+/* Footer style */
+  footer {
+    background-color: #000000;
+    color: aliceblue;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item {
+    flex: 1;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  nav .menu {
+    justify-content: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+  @media (min-width: 1024px) {
+  .content-box {
+    max-width: 1200px;
+    padding: 50px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .resources {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}

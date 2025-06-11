@@ -1,0 +1,78 @@
+ /* Tag selector to style all paragraph text */
+ p {
+    color: #000000;
+  }
+
+  /* Style for the body background */
+  body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #ffd3c2;
+    background-image: url('../image/bg.jpg');
+  }
+  .content-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+    padding: 30px;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Optional: soft shadow for contrast */
+    color: #000;
+    text-align: center;
+  }
+  img {
+    max-width: 650px;
+    height: auto;
+  }
+  /* ID selector for main header */
+
+  header a {
+    color: #b24100;
+    text-decoration: none; 
+    font-weight: bold;     
+    font-size: 18px;       
+  }
+  header a:hover {
+  color: #b397ff; /* Change this to any color you like */
+  }
+
+  #mainHeader {
+    color: #801818;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Class for headers background */
+  .header {
+    background-color: burlywood;
+    color: #801818;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Image border styling */
+  .bordered-img {
+    border: 5px solid black;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  /* Footer style */
+  footer {
+    background-color: #b24100;
+  }
+
+  /* Footer paragraph text color */
+  .footer-text {
+    color: rgb(255, 255, 255);
+  }
+
+  /* Bonus: This class adds a yellow highlight to content */
+  .highlight {
+    background-color: yellow;
+  }
+  
