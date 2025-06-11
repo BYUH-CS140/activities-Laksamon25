@@ -21,11 +21,16 @@
     color: #000;
     text-align: center;
   }
+
   img {
     max-width: 650px;
     height: auto;
   }
+  
   /* ID selector for main header */
+  h1, h2, h3 {
+    width: 100%;
+  }
 
   header a {
     color: #b24100;
@@ -76,3 +81,53 @@
     background-color: yellow;
   }
   
+  /* Medium Devices (≥768px) */
+@media (min-width: 768px) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .header{
+    
+  }
+  section {
+    flex: 1 1 45%;
+  }
+
+  ul {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
+
+/* Large Devices (≥1024px) */
+@media (min-width: 1024px) {
+  .content-box {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  header, footer {
+    grid-column: span 3;
+  }
+
+  main {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
