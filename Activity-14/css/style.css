@@ -177,7 +177,7 @@
     text-align: center;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
   body {
     font-size: 1.1rem;
     display: flex;
