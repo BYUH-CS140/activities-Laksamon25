@@ -44,12 +44,16 @@
     letter-spacing: 0.05em;
   }
 
+  h1, h2, h3, h4 {
+    width: 100%;
+  }
   /* Class for headers background */
   header {
     background-color: #801818;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
+    width: 100%;
   }
 
   section {
