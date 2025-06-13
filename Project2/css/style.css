@@ -82,7 +82,7 @@
   }
   
   /* Medium Devices (≥768px) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav-menu {
     flex-direction: row;
     justify-content: center;
@@ -111,7 +111,7 @@
 }
 
 /* Large Devices (≥1024px) */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .content-box {
     max-width: 1200px;
     display: grid;
