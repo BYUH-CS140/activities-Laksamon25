@@ -23,7 +23,7 @@
   }
 
   img {
-    max-width: 20%;
+    max-width: 650px;
     height: auto;
   }
   
@@ -109,7 +109,7 @@
     text-align: center;
   }
   img {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
   }
 }
