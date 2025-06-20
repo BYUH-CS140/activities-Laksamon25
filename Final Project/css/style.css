@@ -8,6 +8,15 @@ body, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: auto;
 }
+h1.w3-jumbo {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  h1.w3-jumbo {
+    font-size: 4rem;
+  }
+}
 
 .bgimg {
   background-image: url(image/_MG_8354.jpg);
