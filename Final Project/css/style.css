@@ -1,15 +1,42 @@
+/* Base styles (mobile first) */
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
 .w3-row-padding img {
   margin-bottom: 12px;
+  width: 100%;
+  height: auto;
 }
 
 .bgimg {
+  background-image: url(image/_MG_8354.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(image/_MG_8354.jpg);
-  min-height: 100%;
+  min-height: 100vh;
+}
+
+/* Hide sidebar on mobile by default */
+.w3-sidebar {
+  display: none;
+}
+
+/* Media Queries for tablets (≥600px) */
+@media (min-width: 600px) {
+  .w3-sidebar {
+    display: block;
+    width: 40%;
+  }
+
+  .w3-main {
+    margin-left: 40%;
+  }
+}
+
+/* Media Queries for desktops (≥992px) */
+@media (min-width: 992px) {
+  .w3-sidebar {
+    display: block;
+  }
 }
