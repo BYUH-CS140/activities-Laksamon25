@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laksamon's Portfolio</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    <a href="ai.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">AI</a>
+    <a href="feedback.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Feedback</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Ing's Portfolio</b></h1>
+  <p><b>My passion that I created.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="/FinalProject/image/c1.jpg" style="width:100%">
+    <img src="/FinalProject/image/c2.jpg" style="width:100%">
+    <img src="/FinalProject/image/c3.jpg" style="width:100%">
+    <img src="/FinalProject/image/c4.jpg" style="width:100%">
+    <img src="/FinalProject/image/c5.jpg" style="width:100%">
+    <img src="/FinalProject/image/c6.jpg" style="width:100%">
+    <img src="/FinalProject/image/t1.JPG" style="width:100%">
+    <img src="/FinalProject/image/t2.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/FinalProject/image/p1.JPG" style="width:100%">
+    <img src="/FinalProject/image/p2.jpg" style="width:100%">
+    <img src="/FinalProject/image/p3.jpg" style="width:100%">
+    <img src="/FinalProject/image/p4.JPG" style="width:100%">
+    <img src="/FinalProject/image/p5.JPG" style="width:100%">
+    <img src="/FinalProject/image/p6.JPG" style="width:100%">
+    <img src="/FinalProject/image/p7.JPG" style="width:100%">
+    <img src="/FinalProject/image/p8.JPG" style="width:100%">
+    <img src="/FinalProject/image/p9.JPG" style="width:100%">
+    <img src="/FinalProject/image/p10.JPG" style="width:100%">
+    <img src="/FinalProject/image/p11.JPG" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="/FinalProject/image/pp2.JPG" style="width:100%">
+    <img src="/FinalProject/image/pp3.JPG" style="width:100%">
+    <img src="/FinalProject/image/pp4.JPG" style="width:100%">
+    <img src="/FinalProject/image/pp5.JPG" style="width:100%">
+    <img src="/FinalProject/image/pp6.JPG" style="width:100%">
+    <img src="/FinalProject/image/pp7.JPG" style="width:100%">
+    <img src="/FinalProject/image/pp8.JPG" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href="https://www.facebook.com/inglaksamon1999" target="_blank"></a>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <a href="https://www.instagram.com/ing_laksamon/" target="_blank"></a>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/laksamon/" target="_blank"></a>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p style="color: rgb(0, 0, 0);">Created by Ing Laksamon Takhramchan &copy; <script>document.write(new Date().getFullYear());</script></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
