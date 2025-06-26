@@ -42,3 +42,16 @@ function generateQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").textContent = quotes[randomIndex];
 }
+
+function toggleNav() {
+  var sidebar = document.getElementById("mySidebar");
+  var icon = document.getElementById("menuIcon").querySelector("i");
+
+  if (sidebar.style.display === "block") {
+    sidebar.style.display = "none";
+    icon.className = "fa fa-bars"; // back to menu
+  } else {
+    sidebar.style.display = "block";
+    icon.className = "fa fa-remove"; // change to X
+  }
+}
