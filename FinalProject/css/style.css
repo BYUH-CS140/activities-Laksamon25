@@ -74,6 +74,10 @@ h1.w3-jumbo {
   min-width: 100vh;
   min-height: 100vh;
 }
+
+.about {
+  text-align: center;
+}
 /* Sidebar hidden by default (Mobile) */
 .w3-sidebar {
   display: none;
