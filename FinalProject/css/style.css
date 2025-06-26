@@ -59,7 +59,21 @@ h1.w3-jumbo {
   background-size: cover;
   min-height: 100vh;
 }
-
+.bgimg2 {
+  background-image: url(../image/_MG_8354.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.bgimg3 {
+  background-image: url(../image/bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vh;
+  min-height: 100vh;
+}
 /* Sidebar hidden by default (Mobile) */
 .w3-sidebar {
   display: none;
