@@ -57,6 +57,7 @@ h1.w3-jumbo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 100vh;
   min-height: 100vh;
 }
 .bgimg2 {
@@ -64,6 +65,7 @@ h1.w3-jumbo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 100vh;
   min-height: 100vh;
 }
 .bgimg3 {
