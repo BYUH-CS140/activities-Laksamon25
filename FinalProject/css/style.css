@@ -1,24 +1,57 @@
-/* Base styles (mobile first) */
+/* Base Styles (Mobile First) */
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+h1.w3-jumbo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.youtube {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+/* Image Grid */
 .w3-row-padding img {
   margin-bottom: 12px;
   width: 100%;
   height: auto;
 }
-h1.w3-jumbo {
-  font-weight: bold;
-  font-size: 2.5rem;
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: 1 column */
+  gap: 20px;
+  padding: 40px 20px;
+  justify-items: center;
 }
 
-@media (min-width: 768px) {
-  h1.w3-jumbo {
-    font-size: 5rem;
-  }
+.video-grid iframe {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
+
+/* Background Image Section */
 .bgimg {
   background-image: url(../image/_MG_7841.jpg);
   background-position: center;
@@ -27,12 +60,12 @@ h1.w3-jumbo {
   min-height: 100vh;
 }
 
-/* Hide sidebar on mobile by default */
+/* Sidebar hidden by default (Mobile) */
 .w3-sidebar {
   display: none;
 }
 
-/* Media Queries for tablets (≥600px) */
+/* Tablet Styles (≥600px) */
 @media (min-width: 600px) {
   .w3-sidebar {
     display: block;
@@ -42,11 +75,51 @@ h1.w3-jumbo {
   .w3-main {
     margin-left: 40%;
   }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1.w3-jumbo {
+    font-size: 3.5rem;
+  }
 }
 
-/* Media Queries for desktops (≥992px) */
-@media (min-width: 992px) {
-  .w3-sidebar {
-    display: block;
+/* Small Desktop Styles (≥768px) */
+@media (min-width: 768px) {
+  h1.w3-jumbo {
+    font-size: 5rem;
   }
+
+  .youtube {
+    font-size: 2rem;
+  }
+}
+
+/* Large Desktop Styles (≥992px) */
+@media (min-width: 992px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .w3-sidebar {
+    width: 25%;
+  }
+
+  .w3-main {
+    margin-left: 25%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+footer i {
+  margin: 0 10px;
 }
